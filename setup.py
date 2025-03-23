@@ -21,6 +21,8 @@
 import os.path
 from io import open
 
+from setuptools import setup, find_namespace_packages
+
 import tika
 
 try:
