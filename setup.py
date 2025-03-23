@@ -87,7 +87,7 @@ setup(
     url='http://github.com/chrismattmann/tika-python',
     download_url='http://github.com/chrismattmann/tika-python',
     license='Apache License version 2 ("ALv2")',
-    packages=find_packages(exclude=['ez_setup']),
+    packages=find_namespace_packages(exclude=['ez_setup']),
     include_package_data=True,
     zip_safe=True,
     test_suite='tika.tests',
