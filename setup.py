@@ -23,19 +23,19 @@ from io import open
 
 from setuptools import setup, find_namespace_packages
 
-try:
-    from ez_setup import use_setuptools
+# try:
+#     from ez_setup import use_setuptools
+#
+#     use_setuptools()
+# except ImportError:
+#     pass
+#
+# try:version = '3.1.0'
+#     from setuptools import setup, find_packages
+# except ImportError:
+#     from distutils.core import setup, find_packages
 
-    use_setuptools()
-except ImportError:
-    pass
-
-try:
-    from setuptools import setup, find_packages
-except ImportError:
-    from distutils.core import setup, find_packages
-
-version = tika.__version__
+version = '3.1.0'
 
 with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8') as f:
     _descr = f.read()
@@ -74,7 +74,6 @@ extras_require = {
 for reqs in extras_require.values():
     extras_require['all'].extend(reqs)
 
-version = '3.1.0'
 
 setup(
     name='tika',
