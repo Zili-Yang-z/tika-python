@@ -23,8 +23,6 @@ from io import open
 
 from setuptools import setup, find_namespace_packages
 
-import tika
-
 try:
     from ez_setup import use_setuptools
 
@@ -75,6 +73,8 @@ extras_require = {
 
 for reqs in extras_require.values():
     extras_require['all'].extend(reqs)
+
+version = '3.1.0'
 
 setup(
     name='tika',
